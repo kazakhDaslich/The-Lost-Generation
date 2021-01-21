@@ -1,4 +1,4 @@
 # The-Lost-Generation
 The Lost Generation is set in a world where the largest war the world has ever seen, the Great War, ends in a stalemate. This results in disaster for the belligerent nations. The illusion of a stable world has collapsed. Revolution and civil war has become a regular occurrence. Power struggles and political strife are the commonplace mode. Socialism and nationalism threaten the already unstable states, from the Spartakusbund of Germany to the Black Ocean Society in Japan. The future of the world is uncertain, and it appears that a Second Great War is on the horizon. Will the revolutionaries, hoping to create a prosperous world for the free proletarians, emerge triumphant? Or will it be the nationalists, promoting national interests above all else? Will liberalism make its comeback? Or shall it be the “traditional states”, which united during the Great War in the Central Powers to protect its influence? Only time - and you - shall provide answers.
 
-[Join us on Discord](https://img.tweakpc.de/images/2018/04/18/discord-logo.md.jpg)
+[Join us on Discord](https://discord.gg/AJY9ks9Rj5)
