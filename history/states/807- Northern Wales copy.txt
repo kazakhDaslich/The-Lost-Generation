@@ -1,0 +1,20 @@
+
+state={
+	id=807
+	name="STATE_807"
+
+	history={
+		owner = WLS
+		add_core_of = WLS
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		 311 6363 9364
+	}
+	manpower=1504
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

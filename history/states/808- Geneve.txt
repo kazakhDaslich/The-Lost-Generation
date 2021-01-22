@@ -1,0 +1,21 @@
+
+state={
+	id=806
+	name="STATE_806"
+
+	history={
+		owner = SWI
+		add_core_of = SWI
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		 6666
+	}
+	manpower=1202
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}
