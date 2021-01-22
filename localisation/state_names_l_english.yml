@@ -805,5 +805,6 @@
  STATE_804:0 "Herzegovina"
  STATE_805:0 "Northern Epirus"
  STATE_806:0 "Pyrénées-Atlantiques"
- STATE_807:0 "Geneve"
- STATE_808:0 "Swiss Alps"
+ STATE_807:0 "Northern Wales"
+ STATE_808:0 "Geneve"
+ STATE_809:0 "Swiss Alps"
