@@ -4,3 +4,6 @@ continuous_focus_palette = {
 
 	#position = { x = 5000 y = 5000 }
 }
+
+# Continuous focuses will not exist in The Lost Generation. Thus all of them have been removed and replaced with the code 
+# that can be seen above.
