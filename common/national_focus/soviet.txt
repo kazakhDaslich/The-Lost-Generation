@@ -1,0 +1,354 @@
+focus_tree = {
+	id = soviet_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	default = yes
+    
+    focus = {
+        id = SOV_overcoming_the_shock
+        icon = GFX_SOV_overcoming_the_shock
+        available = {
+            has_war = no
+        }
+        x = 8
+        y = 0
+        ai_will_do = { 
+            base = 10
+         }
+
+        completion_reward = {
+            add_political_power = 50
+            custom_effect_tooltip = SOV_overcoming_the_shock_tt
+        }
+    }
+
+    focus = {
+        id = SOV_if_tomorrow_brings_war
+        icon = GFX_SOV_if_tomorrow_brings_war
+        available = {
+            has_war = no
+        }
+        x = 12
+        y = 3
+        prerequisite = {
+            focus = SOV_overcoming_the_shock
+        }
+        ai_will_do = {
+            base = 2 # Note: All the "Establish the PCR" focuses should have lower so that the AI will go down that branch first, except for the final focus which should be 1
+        }
+        completion_reward = {
+            add_ideas = SOV_preparing_for_war
+            custom_effect_tooltip = SOV_prepping_for_war_tt
+        }
+    }
+    focus = {
+        id = SOV_we_shall_strike_first
+        icon = GFX_SOV_we_shall_strike_first
+        relative_position_id = SOV_if_tomorrow_brings_war
+        mutually_exclusive = { focus = SOV_if_the_dark_force_comes }
+        prerequisite = {
+            focus = SOV_if_tomorrow_brings_war
+            focus = SOV_the_free_homeland
+        }
+        ai_will_do = {
+            base = 5
+        }
+        x = -3
+        y = 1
+        completion_reward = {
+            country_event = { id = soviet_focus.1 }
+            add_war_support = 0.05
+            custom_effect_tooltip = SOV_striking_first_tt
+        }
+    }
+    focus = {
+        id = SOV_if_the_dark_force_comes
+        icon = GFX_SOV_if_the_dark_force_comes
+        relative_position_id = SOV_if_tomorrow_brings_war
+        mutually_exclusive = { focus = SOV_we_shall_strike_first }
+        prerequisite = {
+            focus = SOV_if_tomorrow_brings_war
+        }
+        ai_will_do = {
+            base = 5
+        }
+        x = 3
+        y = 1
+        completion_reward = {
+            add_ideas = SOV_prepping_for_the_worst
+            custom_effect_tooltip = SOV_dark_force_tt
+        }
+    }
+    focus = {
+        id = SOV_the_entire_soviet_people
+        icon = GFX_SOV_the_entire_soviet_people
+        relative_position_id = SOV_if_the_dark_force_comes
+        prerequisite = {
+            focus = SOV_if_the_dark_force_comes
+        }
+        ai_will_do = { base = 5 }
+        x = 0
+        y = 2
+        completion_reward = {
+            country_event = { id = soviet_focus.2 }
+            custom_effect_tooltip = SOV_people_tt
+        }
+    }
+    focus = {
+        id = SOV_the_free_homeland
+        icon = GFX_SOV_the_free_homeland
+        relative_position_id = SOV_the_entire_soviet_people
+        prerequisite ={
+            focus = SOV_the_entire_soviet_people
+        }
+        ai_will_do = {
+            base = 5
+        }
+        x = 0
+        y = 2
+        completion_reward = {
+            country_event = { id = soviet_focus.3 }
+            custom_effect_tooltip = SOV_free_homeland_tt
+        }
+    }
+    focus = {
+        id = SOV_on_the_land_in_the_sky_on_the_sea
+        icon = GFX_sov_land_sky_sea
+        relative_position_id = SOV_we_shall_strike_first
+        prerequisite = {
+            focus = SOV_we_shall_strike_first
+        }
+        ai_will_do = {
+            base = 5
+        }
+        x = 0
+        y = 2
+        completion_reward = {
+            army_experience = 25
+            navy_experience = 25
+            air_experience = 25
+            custom_effect_tooltip = SOV_land_sky_sea_tt
+        }
+    }
+    focus = {
+        id = SOV_our_melody
+        icon = GFX_SOV_our_melody
+        relative_position_id = SOV_on_the_land_in_the_sky_on_the_sea
+        prerequisite = {
+            focus = SOV_on_the_land_in_the_sky_on_the_sea
+        }
+        ai_will_do = {
+            base = 5
+        }
+        x = 0
+        y = 2
+        completion_reward = {
+            add_ideas = politics_in_the_army
+            custom_effect_tooltip = SOV_our_melody_tt
+        }
+    }
+    focus = {
+        id = SOV_we_will_be_ready
+        icon = GFX_SOV_we_will_be_ready
+        relative_position_id = SOV_our_melody
+        prerequisite = {
+            focus = SOV_our_melody
+            focus = SOV_the_free_motherland
+        }
+        ai_will_do = {
+            base = 5
+        }
+        x = 3
+        y = 1
+        completion_reward = {
+            country_event = { id = soviet_focus.4 }
+            custom_effect_tooltip = SOV_we_will_be_ready_tt
+        }
+    }
+    focus = {
+        id = SOV_establish_the_peoples_com
+        icon = GFX_SOV_railways
+        relative_position_id = SOV_overcoming_the_shock
+        prerequisite = {
+            focus = SOV_overcoming_the_shock
+        }
+        ai_will_do = {
+            base = 5
+        }
+        x = -5
+        y = 3
+        completion_reward = {
+            # To Be Decided
+            custom_effect_tooltip = SOV_establish_the_peoples_com_tt
+        }
+    }
+    focus = {
+        id = SOV_appoint_dzerzhinsky
+        icon = GFX_SOV_appoint_dzerzhinsky
+        relative_position_id = SOV_establish_the_peoples_com
+        mutually_exclusive = { focus = SOV_distract_kaganovich }
+        prerequisite = {
+            focus = SOV_establish_the_peoples_com
+        }
+        ai_will_do = { base = 4 }
+        x = -2
+        y = 2
+        completion_reward = {
+            custom_effect_tooltip = SOV_appoint_dzerzhinsky_tt
+            set_variable = {
+                var = andreyev_influence
+                value = 100
+            }        }
+    }
+    focus = {
+        id = SOV_distract_kaganovich
+        icon = GFX_SOV_distract_kaganovich
+        relative_position_id = SOV_establish_the_peoples_com
+        mutually_exclusive = { focus = SOV_appoint_dzerzhinsky }
+        prerequisite = {
+            focus = SOV_establish_the_peoples_com
+        }
+        ai_will_do = { base = 4 }
+        x = 2
+        y = 2
+        completion_reward = {
+            custom_effect_tooltip = SOV_distract_kaganovich_tt
+            set_variable = {
+                var = andreyev_influence
+                value = 100
+            }
+        }
+    }
+    focus = {
+        id = SOV_rein_in_andreyev
+        icon = GFX_SOV_andreyev
+        relative_position_id = SOV_distract_kaganovich
+        prerequisite = {
+            focus = SOV_distract_kaganovich
+            focus = SOV_appoint_dzerzhinsky
+        }
+        ai_will_do = { base = 5 }
+        x = -2
+        y = 2
+        completion_reward = {
+            custom_effect_tooltip = SOV_andreyev_tt
+            subtract_from_variable = {
+                var = andreyev_influence
+                value = 15
+            }
+        }
+    }
+    focus = {
+        id = SOV_the_pink_passenger
+        icon = GFX_SOV_the_pink_passenger
+        relative_position_id = SOV_rein_in_andreyev
+        prerequisite = {
+            focus = SOV_rein_in_andreyev
+        }
+        ai_will_do = { base = 5 }
+        x = -2
+        y = 2
+        completion_reward = {
+            custom_effect_tooltip = SOV_the_pink_passenger_tt
+            country_event = { id = soviet_focus.5 }
+        }
+    }
+    focus = {
+        id = SOV_the_gosplan_is_unreliable
+        icon = GFX_SOV_gosplan
+        ai_will_do = { base = 5 }
+        relative_position_id = SOV_the_pink_passenger
+        prerequisite = {
+            focus = SOV_the_pink_passenger
+        }
+        x = 0
+        y = 2
+        completion_reward = {
+            custom_effect_tooltip = SOV_the_gosplan_is_unreliable_tt
+            country_event = { id = soviet_focus.6 }
+        }
+    }
+    focus = {
+        id = SOV_on_second_thought
+        icon = GFX_SOV_on_second_thought
+        relative_position_id = SOV_the_gosplan_is_unreliable
+        ai_will_do = { base = 5 }
+        prerequisite = {
+            focus = SOV_the_gosplan_is_unreliable
+        }
+        x = 0
+        y = 2
+        completion_reward = {
+            custom_effect_tooltip = SOV_on_second_thought_tt
+            country_event = { id = soviet_focus.7 }
+        }
+    }
+    focus = {
+        id = SOV_zverevs_plan
+        icon = GFX_SOV_zverev
+        relative_position_id = SOV_rein_in_andreyev
+        mutually_exclusive = { focus = SOV_the_pink_passenger }
+        ai_will_do = { base = 5 }
+        prerequisite = {
+            focus = SOV_rein_in_andreyev
+        }
+        x = 2
+        y = 2
+        completion_reward = {
+            custom_effect_tooltip = SOV_zverevs_plan_tt
+            country_event = { id = soviet_focus.8 }
+        }
+    }
+    focus = {
+        id = SOV_centralize_the_trade_unions
+        icon = GFX_SOV_centralize_the_trade_unions
+        relative_position_id = SOV_zverevs_plan
+        ai_will_do = {
+            base = 5
+        }
+        prerequisite = {
+            focus = SOV_zverevs_plan
+        }
+        x = 0
+        y = 2
+        completion_reward = {
+            custom_effect_tooltip = SOV_centralize_the_trade_unions_tt
+            country_event = { id = soviet_focus.9 }
+        }
+    }
+    focus = {
+        id = SOV_state_quality_marks
+        icon = GFX_SOV_state_quality_marks
+        relative_position_id = SOV_centralize_the_trade_unions
+        ai_will_do = { base = 5 }
+        prerequisite = {
+            focus = SOV_centralize_the_trade_unions
+        }
+        x = 0
+        y = 2
+        completion_reward = {
+            custom_effect_tooltip = SOV_state_quality_marks_tt
+            country_event = { id = soviet_focus.10 }
+        }
+    }
+    focus = {
+        id = SOV_the_revolution_continues
+        icon = GFX_SOV_the_revolution_continues
+        relative_position_id = SOV_on_second_thought
+        prerequisite = {
+            focus = SOV_on_second_thought
+            focus = SOV_state_quality_marks
+        }
+        x = 2
+        y = 1
+    }
+    
+    }

@@ -10,5 +10,7 @@ tags={
 name="The Lost Generation"
 replace_path="gfx/loadingscreens"
 replace_path="history/states"
+replace_path="common/continuous_focus"
+replace_path="common/national_focus"
 supported_version="1.10.3"
 remote_file_id="2112802713"

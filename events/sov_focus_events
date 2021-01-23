@@ -1,0 +1,19 @@
+###########################
+# Soviet Focus Tree Events
+###########################
+
+add_namespace = soviet_focus
+
+# Rokossovsky's Plan Event One
+country_event = {
+    id = soviet_focus.1
+    title = soviet_focus.1.t
+    desc = soviet_focus.1.d
+    picture = GFX_report_event_rokossovsky
+
+    is_triggered_only = yes
+
+    option = { 
+        name = soviet_focus.1.a
+    }    
+}

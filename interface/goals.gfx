@@ -1,0 +1,88 @@
+spriteTypes = {	
+
+	# Soviet Focuses time
+	SpriteType = {
+		name = GFX_SOV_overcoming_the_shock
+		texturefile = "gfx/interface/goals/SOV_overcoming_the_shock.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_if_tomorrow_brings_war
+		texturefile = "gfx/interface/goals/SOV_tomorrow_brings_war.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_we_shall_strike_first
+		texturefile = "gfx/interface/goals/SOV_we_shall_strike_first.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_if_the_dark_force_comes
+		texturefile = "gfx/interface/goals/SOV_if_the_dark_force_comes.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_the_entire_soviet_people
+		texturefile = "gfx/interface/goals/SOV_the_entire_soviet_people.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_the_free_homeland
+		texturefile = "gfx/interface/goals/SOV_the_free_homeland.dds"
+	}
+	SpriteType = {
+		name = GFX_sov_land_sky_sea
+		texturefile = "gfx/interface/goals/SOV_land_sky_sea.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_our_melody
+		texturefile = "gfx/interface/goals/SOV_our_melody.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_we_will_be_ready
+		texturefile = "gfx/interface/goals/SOV_well_be_ready.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_establish_the_peoples_com
+		texturefile = "gfx/interface/goals/SOV_establish_peoples_com.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_andreyev
+		texturefile = "gfx/interface/goals/SOV_andreyev.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_appoint_dzerzhinsky
+		texturefile = "gfx/interface/goals/SOV_appoint_dzerzhinsky.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_distract_kaganovich
+		texturefile = "gfx/interface/goals/SOV_distract_kaganovich.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_the_pink_passenger
+		texturefile = "gfx/interface/goals/SOV_the_pink_passenger.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_gosplan
+		texturefile = "gfx/interface/goals/focus_SOV_the_gosplan_is_unreliable.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_on_second_thought
+		texturefile = "gfx/interface/goals/SOV_on_second_thought.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_zverev
+		texturefile = "gfx/interface/goals/SOV_zverev.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_centralize_the_trade_unions
+		texturefile = "gfx/interface/goals/SOV_centralize_the_trade_unions.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_state_quality_marks
+		texturefile = "gfx/interface/goals/SOV_state_quality_marks.dds"
+	}
+	SpriteType = {
+		name = GFX_SOV_the_revolution_continues
+		texturefile = "gfx/interface/goals/SOV_the_revolution_continues.dds"
+	}
+	
+	
+
+
+}
