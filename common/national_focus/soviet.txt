@@ -253,6 +253,7 @@ focus_tree = {
         prerequisite = {
             focus = SOV_rein_in_andreyev
         }
+        mutually_exclusive = { focus = SOV_zverevs_plan }
         ai_will_do = { base = 5 }
         x = -2
         y = 2
