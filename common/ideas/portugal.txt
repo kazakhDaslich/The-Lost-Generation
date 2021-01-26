@@ -1,0 +1,60 @@
+ideas = {
+    country = {
+		POR_aftermath_of_the_salazar_coup = {
+
+			name = POR_aftermath_of_the_salazar_coup
+			
+			allowed = {
+				original_tag = POR
+			}
+
+            modifier = {
+                political_power_cost = 0.9
+                stability_weekly = -0.1
+                
+            }
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+		}
+        POR_overextended_colonization = {
+            
+            name = POR_overextended_colonization
+
+            allowed = {
+                original_tag = POR
+            }
+
+            modifier = {
+                political_power_cost = 0.3
+                stability_weekly = -0.05
+                research_speed_factor = -0.02
+            }
+
+            removal_cost = -1
+            allowed_civil_war = { always = yes }
+        }
+        POR_republican_propaganda = {
+
+            name = POR_republican_propaganda
+
+            allowed = {
+                    original_tag = POR
+            }
+            
+            modifier = {
+                political_power_gain = 0.8
+                conscription_factor = 0.03
+                custom_effect_tooltip = POR_republican_propaganda_tt
+            }
+
+            removal_cost = -1
+
+            allowed_civil_war = { always = yes }
+        }
+    }
+}
